@@ -13,7 +13,7 @@ body {
   background-color: gray;
 }
 
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
   color: black;
   font-weight: bold;
   font-size: 2.20em;
@@ -49,7 +49,7 @@ body {
   padding: 0;
 }
 
-.navbar-collapse.collapse.in {
+.navbar-collapse.collapse.in, .navbar-collapse.collapsing {
   background-color: white;
 }
 
@@ -97,6 +97,14 @@ section > div {
 
 .nav>li>a {
   text-align: center;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+  margin-left: 0;
+}
+
+.h3, h3 {
+  font-size: 2em;
 }
 
 @media (min-width: 1200px) {
