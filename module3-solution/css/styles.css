@@ -9,7 +9,7 @@ body {
   color: black;
 }
 
-.navbar-default {
+.navbar-default, .navbar-header {
   background-color: gray;
 }
 
@@ -47,10 +47,6 @@ body {
   border-color: black;
   border-width: 2px;
   padding: 0;
-}
-
-.navbar-collapse.collapse.in, .navbar-collapse.collapsing {
-  background-color: white;
 }
 
 .navbar-toggle {
@@ -126,6 +122,9 @@ section > div {
 }
 
 @media (max-width: 767px) {
+  .navbar-collapse.collapse.in, .navbar-collapse.collapsing {
+    background-color: white;
+  }
   .container {
     width: 100%;
     padding: 0 15px;
